@@ -4,3 +4,19 @@ window.onload = function myLoadFunction() {
 };
 
 //the listener function here
+window.clickListener = function clickListener() {
+	alert("woohoo!")
+}
+
+const greenButtonTwo = document.getElementById("theSecondGreen");
+
+greenButtonTwo.onclick = function(){
+	alert("woohoo2!")
+}
+
+const greenButtonThree = document.getElementById("theThirdGreen");
+
+greenButtonThree.addEventListener("click", function(){
+	alert("woohoo3!")
+});
+
